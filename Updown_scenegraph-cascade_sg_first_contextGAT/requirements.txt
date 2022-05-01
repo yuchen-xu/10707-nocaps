@@ -1,0 +1,13 @@
+torch==1.4
+torchvision==0.5.0
+h5py
+tqdm
+nltk
+numpy
+dgl<0.5
+yacs
+easydict
+matplotlib
+scikit-image
+allennlp==0.8.4
+overrides==3.1.0

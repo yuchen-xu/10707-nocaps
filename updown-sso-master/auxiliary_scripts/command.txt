@@ -1,0 +1,3 @@
+python scripts/train.py --config configs/updown_nocaps_val.yaml --gpu-ids 0 --serialization-dir checkpoints/updown --start-from-checkpoint checkpoints/updown/checkpoint_43000.pth
+python scripts/inference.py --config configs/updown_nocaps_test.yaml --checkpoint-path checkpoints/updown/checkpoint_9000.pth --output-path outputs/predictions.json --gpu-ids 0 --evalai-submit
+python scripts/train_tmp.py --config configs/updown_nocaps_val.yaml --gpu-ids 0 --serialization-dir checkpoints/updown --start-from-checkpoint checkpoints/updown/checkpoint_9000.pth --config-override OPTIM.NUM_ITERATIONS 40000
